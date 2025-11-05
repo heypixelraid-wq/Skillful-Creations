@@ -1,0 +1,378 @@
+# <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillful Creations | Design Meets Clarity</title>
+    <!-- Load Tailwind CSS for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom font and base styling */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fa; /* Very light, soft gray for the background */
+        }
+        /* Custom pastel colors based on theme */
+        .pastel-bg {
+            background-color: #fef3f7; /* Very light rose/cream for hero sections */
+        }
+        .accent-text {
+            color: #6d5b9d; /* Soft, deep lavender for headings and highlights */
+        }
+        .accent-button {
+            background-color: #8b80c5; /* Muted purple for CTA buttons */
+            transition: background-color 0.3s;
+        }
+        .accent-button:hover {
+            background-color: #6d5b9d;
+        }
+        /* Custom table styling for better aesthetic */
+        .pricing-table th, .pricing-table td {
+            padding: 1rem;
+            text-align: center;
+        }
+        .pricing-table th:first-child, .pricing-table td:first-child {
+            text-align: left;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header / Navigation -->
+        <header class="py-6 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold accent-text tracking-tight">
+                Skillful <span class="text-gray-900">Creations</span>
+            </h1>
+            <a href="#contact" class="px-4 py-2 text-sm font-semibold rounded-full text-white accent-button hover:shadow-lg transition-shadow duration-300">
+                Get Started
+            </a>
+        </header>
+
+        <!-- 1. Welcome Section (Hero) -->
+        <section class="text-center py-20 my-10 rounded-3xl pastel-bg shadow-xl">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-6xl font-black mb-6 text-gray-900 leading-tight">
+                    Welcome to Skillful Creations
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Where design meets clarity and ideas turn into visuals.
+                </p>
+                <p class="text-lg text-gray-700 font-medium">
+                    We help students, small businesses, and professionals present their work with **confidence and style**.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Our Services -->
+        <section id="services" class="py-12">
+            <h3 class="text-4xl font-bold text-center mb-12 accent-text">Our Services</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Service Card 1: Presentations -->
+                <div class="p-6 bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <i data-lucide="monitor" class="w-8 h-8 accent-text mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Presentations</h4>
+                    <ul class="text-gray-600 space-y-1 text-sm list-inside ml-2">
+                        <li>University Projects</li>
+                        <li>Assignments</li>
+                        <li>Business Pitches</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2: Branding -->
+                <div class="p-6 bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <i data-lucide="gem" class="w-8 h-8 accent-text mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Logos & Branding Elements</h4>
+                    <p class="text-gray-600 text-sm">
+                        Create a recognizable, clean identity that speaks volumes.
+                    </p>
+                </div>
+
+                <!-- Service Card 3: Business Cards -->
+                <div class="p-6 bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <i data-lucide="credit-card" class="w-8 h-8 accent-text mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Business Cards</h4>
+                    <p class="text-gray-600 text-sm">
+                        Digital or Print-Ready designs for professional networking.
+                    </p>
+                </div>
+                
+                <!-- Service Card 4: CVs & Resumes -->
+                <div class="p-6 bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <i data-lucide="user-check" class="w-8 h-8 accent-text mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">CVs & Resume Design</h4>
+                    <p class="text-gray-600 text-sm">
+                        Professional layouts to help you stand out in the job market.
+                    </p>
+                </div>
+
+                <!-- Service Card 5: Other Design Work -->
+                <div class="p-6 bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <i data-lucide="layers" class="w-8 h-8 accent-text mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Other Digital Design Work</h4>
+                    <p class="text-gray-600 text-sm">
+                        Custom graphic and digital design work available on request.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- 3. Packages & Pricing -->
+        <section id="packages" class="py-16">
+            <h3 class="text-4xl font-bold text-center mb-12 accent-text">Packages & Pricing</h3>
+
+            <!-- Feature Cards (Existing Content) -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                
+                <!-- Package: Standard -->
+                <div class="bg-sky-50 p-8 rounded-2xl shadow-xl flex flex-col h-full border-t-4 border-sky-300">
+                    <h4 class="text-2xl font-bold mb-4 text-sky-800">Standard</h4>
+                    <p class="text-gray-500 mb-6 flex-grow">Suitable for quick academic or small business needs.</p>
+                    <div class="space-y-3 text-gray-700">
+                        <p class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i>Clean & Simple Design</p>
+                        <p class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i>1 Concept</p>
+                        <p class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i>Basic Revisions</p>
+                    </div>
+                </div>
+
+                <!-- Package: Pro (Highlight) -->
+                <div class="bg-white p-8 rounded-2xl shadow-2xl flex flex-col h-full border-t-4 border-sky-500 transform scale-105 z-10">
+                    <div class="mb-3">
+                        <span class="inline-block bg-sky-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
+                    </div>
+                    <h4 class="text-3xl font-bold mb-4 accent-text">Pro</h4>
+                    <p class="text-gray-600 mb-6 flex-grow">Best for important presentations & brand identity work.</p>
+                    <div class="space-y-3 text-gray-700 font-medium">
+                        <p class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-sky-600 mr-2 mt-1 flex-shrink-0"></i>Enhanced Layout & Typography</p>
+                        <p class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-sky-600 mr-2 mt-1 flex-shrink-0"></i>2–3 Concepts / Options</p>
+                        <p class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-sky-600 mr-2 mt-1 flex-shrink-0"></i>Multiple Revisions</p>
+                        <p class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-sky-600 mr-2 mt-1 flex-shrink-0"></i>Priority Delivery</p>
+                    </div>
+                </div>
+
+                <!-- Package: Premium -->
+                <div class="bg-sky-50 p-8 rounded-2xl shadow-xl flex flex-col h-full border-t-4 border-sky-300">
+                    <h4 class="text-2xl font-bold mb-4 text-sky-800">Premium</h4>
+                    <p class="text-gray-500 mb-6 flex-grow">For those who want long-term use and a polished identity.</p>
+                    <div class="space-y-3 text-gray-700">
+                        <p class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i>Fully Customized Design System</p>
+                        <p class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i>Advanced Visual Style</p>
+                        <p class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i>Full Collaboration & Editing Support</p>
+                        <p class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0"></i>Source Files Included</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Breakdown Table -->
+            <h4 class="text-2xl font-bold text-center mb-6 text-gray-700">Detailed Pricing (PKR Range)</h4>
+            <div class="overflow-x-auto rounded-xl shadow-lg border border-gray-200">
+                <table class="w-full min-w-[600px] bg-white pricing-table">
+                    <thead class="bg-gray-100 border-b border-gray-200">
+                        <tr class="text-sm uppercase tracking-wider text-gray-600">
+                            <th class="w-1/4">Service</th>
+                            <th class="w-1/4">Standard</th>
+                            <th class="w-1/4">Pro</th>
+                            <th class="w-1/4">Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Presentations Row -->
+                        <tr class="border-b border-gray-100 hover:bg-sky-50/50">
+                            <td class="font-semibold text-gray-800">Presentations</td>
+                            <td class="text-gray-600">500–1200</td>
+                            <td class="text-sky-600 font-medium">1500–3000</td>
+                            <td class="text-purple-600 font-medium">3500–8000+</td>
+                        </tr>
+                        <!-- Logos Row -->
+                        <tr class="border-b border-gray-100 hover:bg-sky-50/50">
+                            <td class="font-semibold text-gray-800">Logos & Branding</td>
+                            <td class="text-gray-600">600–1500</td>
+                            <td class="text-sky-600 font-medium">2000–4500</td>
+                            <td class="text-purple-600 font-medium">6000–15000+</td>
+                        </tr>
+                        <!-- CV / Biz Card Row -->
+                        <tr class="hover:bg-sky-50/50">
+                            <td class="font-semibold text-gray-800">CV / Business Card</td>
+                            <td class="text-gray-600">300–800</td>
+                            <td class="text-sky-600 font-medium">1000–2000</td>
+                            <td class="text-purple-600 font-medium">2500–5000+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- End Pricing Breakdown Table -->
+
+            <!-- Pricing Note -->
+            <p class="text-center text-sm text-gray-500 italic mt-6">
+                Special consideration and reduced pricing may apply in certain cases.
+            </p>
+            <!-- End Pricing Note -->
+
+        </section>
+        
+        <!-- 4. Feedback & Trust -->
+        <section class="py-16">
+            <div class="max-w-4xl mx-auto text-center p-8 rounded-2xl pastel-bg shadow-lg">
+                <h3 class="text-3xl font-bold mb-4 accent-text">Feedback & Trust</h3>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    We believe in **clear communication**, **on-time delivery**, and **clean, minimal aesthetic design**.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed font-semibold">
+                    Client satisfaction is our priority — feedback and adjustments are always welcomed.
+                </p>
+            </div>
+        </section>
+
+        <!-- 5. Get in Touch (Contact) -->
+        <section id="contact" class="py-20">
+            <h3 class="text-4xl font-bold text-center mb-10 accent-text">Get in Touch</h3>
+
+            <div class="max-w-md mx-auto bg-white p-8 rounded-2xl shadow-2xl border-t-4 border-sky-500">
+                <p class="text-center text-lg text-gray-600 mb-6">
+                    Ready to turn your ideas into visuals? Contact us today!
+                </p>
+
+                <div class="space-y-6">
+                    <!-- WhatsApp -->
+                    <div class="flex items-center p-4 bg-green-50 rounded-lg">
+                        <i data-lucide="message-square" class="w-6 h-6 text-green-600 mr-4 flex-shrink-0"></i>
+                        <div>
+                            <p class="text-sm text-gray-500 font-medium">WhatsApp</p>
+                            <a href="https://wa.me/03701178525" target="_blank" class="text-lg font-semibold text-green-700 hover:text-green-800 transition-colors">
+                                03701178525
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="flex items-center p-4 bg-sky-50 rounded-lg">
+                        <i data-lucide="mail" class="w-6 h-6 text-sky-600 mr-4 flex-shrink-0"></i>
+                        <div>
+                            <p class="text-sm text-gray-500 font-medium">Email</p>
+                            <a href="mailto:hey.pixelraid@gmail.com" class="text-lg font-semibold text-sky-700 hover:text-sky-800 transition-colors">
+                                hey.pixelraid@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 mt-12 text-center border-t border-gray-200">
+            <p class="text-sm text-gray-500">
+                &copy; <span id="year"></span> Skillful Creations. Design Meets Clarity.
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- Script to render Lucide icons and set current year in footer -->
+    <script>
+        // Renders Lucide icons dynamically
+        lucide.createIcons();
+
+        // Sets the current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>Sample workflow for building and deploying a Next.js site to GitHub Pages
+#
+# To get started with Next.js see: https://nextjs.org/docs/getting-started
+#
+name: Deploy Next.js site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Detect package manager
+        id: detect-package-manager
+        run: |
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+            echo "manager=yarn" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT
+            echo "runner=yarn" >> $GITHUB_OUTPUT
+            exit 0
+          elif [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "manager=npm" >> $GITHUB_OUTPUT
+            echo "command=ci" >> $GITHUB_OUTPUT
+            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            echo "Unable to determine package manager"
+            exit 1
+          fi
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          # Automatically inject basePath in your Next.js configuration file and disable
+          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
+          #
+          # You may remove this line if you want to manage the configuration yourself.
+          static_site_generator: next
+      - name: Restore cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .next/cache
+          # Generate a new cache whenever packages or source files change.
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Build with Next.js
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
